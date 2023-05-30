@@ -76,7 +76,7 @@ button{
   flex-direction: column;
   border: solid 1px #7a24f2;
   justify-content: space-between;
-
+  border-radius: 5px;
 }
 .list h3{
   text-align: center;
@@ -88,26 +88,30 @@ button{
   justify-content: space-between;
 }
 .update-btn{
-  background-color: black;
+  background-color: rgb(31, 238, 93);
   color: white;
   border: 0px;
   padding: 10px 20px;
   cursor: pointer;
+  border-radius: 5px;
 }
 .update-btn:hover{
-  background-color: white;
+  background-color: rgb(0, 255, 76);
   color: black;
+  border-radius: 5px;
 }
 .delete-btn{
   cursor:pointer;
   border: 0px;
   padding: 10px 20px;
-  background-color: red;
+  background-color: rgb(228, 11, 11);
   color: white;
+  border-radius: 5px;
 }
 .delete-btn:hover{
-  color:red;
-  background-color:white;
+  color:rgb(255, 255, 255);
+  background-color: rgb(228, 11, 11);
+  border-radius: 5px;
 }
 
 /* UpdateAlbum component style */
