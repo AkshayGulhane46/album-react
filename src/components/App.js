@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { Routes, Route } from "react-router-dom";
 import AddAlbum from './AddAlbum';
-import AlbumsList from './AlbumsList';
+import AlbumsList from './albumLists';
 // import Navbar from './Navbar'
-import UpdateAlbum from './UpdateAlbum';
+import UpdateAlbum from './update';
 
 export default class App extends Component {
   constructor() {

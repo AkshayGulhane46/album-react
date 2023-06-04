@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 import Navbar from './Navbar';
 
 const AddAlbum = (props) => {
-
-  //this function get all the input like userid and title then call add albumm function for add it on the album list
+  // First get the album data 
   const getAlbumFormData = () => {
     const userId = document.getElementById('aaform-userid-inp').value;
     const title = document.getElementById('aaform-title-inp').value;

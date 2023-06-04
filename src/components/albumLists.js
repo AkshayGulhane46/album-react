@@ -1,5 +1,5 @@
 import React from 'react'
-import List from './List'
+import List from './singleList'
 import Navbar from './Navbar'
 
 //get all albums list from app and then call list component for each list on the albums

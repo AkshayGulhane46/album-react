@@ -7,7 +7,7 @@
 body{
   width: 100%;
   min-height: 100vh;
-  background-color: #F2F2F2;
+  background-color: #EAC7C7;
 }
 a{
   color: unset;
@@ -29,11 +29,12 @@ button{
 .navbar{
   width: 100%;
   padding: 20px 10px;
-  background-color: #85674b;
+  background-color: white;
   display: flex;
   justify-content: center;
   position: fixed;
   align-items: center;
+  box-shadow: 4px 7px 20px 0px #292424bf;
 }
 .navbar h2{
   width: fit-content;
@@ -55,6 +56,7 @@ button{
 
 /* AlbumsList component style */
 .albums-list{
+
   width: 70%;
   margin: auto;
   padding-top: 73px;
@@ -67,16 +69,17 @@ button{
 .list{
   width: 300px;
   height: 150px;
-  background-color: #ffffff;
+  background-color: #FFD4B2;
   margin-bottom:5px ;
   margin-top:5px;
   color: black;
   padding: 10px;
   display: flex;
   flex-direction: column;
-  border: solid 1px #7a24f2;
   justify-content: space-between;
   border-radius: 5px;
+  box-shadow: 2px 3px 6px #f7b37a;
+
 }
 .list h3{
   text-align: center;
@@ -88,23 +91,22 @@ button{
   justify-content: space-between;
 }
 .update-btn{
-  background-color: rgb(31, 238, 93);
-  color: white;
+  color:black;
   border: 0px;
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 5px;
 }
 .update-btn:hover{
-  background-color: rgb(0, 255, 76);
-  color: black;
+  background-color: rgb(49, 139, 76);
+  color: rgb(255, 255, 255);
   border-radius: 5px;
 }
 .delete-btn{
   cursor:pointer;
   border: 0px;
   padding: 10px 20px;
-  background-color: rgb(228, 11, 11);
+  background-color: black;
   color: white;
   border-radius: 5px;
 }
