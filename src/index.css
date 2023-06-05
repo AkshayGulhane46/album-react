@@ -98,9 +98,12 @@ button{
   border-radius: 5px;
 }
 .update-btn:hover{
-  background-color: rgb(49, 139, 76);
-  color: rgb(255, 255, 255);
+  color:black;
+  border: 0px;
+  padding: 10px 20px;
+  cursor: pointer;
   border-radius: 5px;
+  box-shadow: 5px 5px black;
 }
 .delete-btn{
   cursor:pointer;
@@ -118,39 +121,110 @@ button{
 
 /* UpdateAlbum component style */
 .update-album{
-  width: 350px;
-  margin: auto;
-  padding-top: 73px;
   color: white;
+  padding-top: 73px;
+  width: 450px;
+  margin: auto;
 }
 .form-container{
-  background-color: #478AC9;
-  padding: 10px;
-  margin-top: 50px;
+  color: white;
+  padding-top: 73px;
+  width: 450px;
+  margin: auto;
 }
 .inp-container{
-  margin: 10px;
 }
+
+#title-inp{
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 3px 9px 0px #292a2d99;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#userid-inp{
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 3px 9px 0px #292a2d99;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#album-title{
+  color: black;
+
+}
+
 .form-container button{
-  background-color: green;
-  padding: 10px 20px;
   color: white;
+  height: 50px;
+  width: 200px;
+  border: none;
+  border-radius: 20px;
+  background-color: black;
+  box-shadow: 0px 3px 9px 0px #292a2d99;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  align-self: center;
 }
 
 /* addAlbum container style */
 .addalbum-container{
   color: white;
   padding-top: 73px;
-  width: 350px;
+  width: 450px;
   margin: auto;
 }
+
+#aaform-userid-inp{
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 3px 9px 0px #292a2d99;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#aaform-title-inp{
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0px 3px 9px 0px #292a2d99;
+  margin-bottom: 20px;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
 .addalbum-form{
   padding: 10px;
-  background-color: #478AC9;
   margin-top: 50px;
 }
 .addalbum-form button{
-  background-color: green;
-  padding: 10px 20px;
   color: white;
+  height: 50px;
+  width: 200px;
+  border: none;
+  border-radius: 20px;
+  background-color: black;
+  box-shadow: 0px 3px 9px 0px #292a2d99;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  align-self: center;
 }

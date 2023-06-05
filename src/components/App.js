@@ -24,18 +24,6 @@ export default class App extends Component {
     })
   }
 
-  // setLastId=()=>{
-  //   const length=this.state.albums.length;
-  //   const lastId=this.state.albums[length-1].id;
-  //   this.setState({
-  //     lastId:lastId
-  //   })
-  //   console.log(this.state.lastId);
-  // }
-
-
-  //delete album function-----------------------------------------------------------------------------------
-  //this function take album id from albums list and then delete the album from albums list and update state
   deleteAlbumFromList = (id) => {
     fetch(`https://jsonplaceholder.typicode.com/albums/${id}`, { method: 'DELETE', })
     const newAlbums = this.state.albums.filter((album) => album.id !== id);
@@ -44,17 +32,13 @@ export default class App extends Component {
       albums: newAlbums,
     })
   }
-  //---------------------------------------------------------------------------------------------------------
 
-
-  //update album functions------------------------------------------------------------------------------------
-  //this function take album object from albums list and set state for update album
   setUpdateAlbum = async (album) => {
     this.setState({
       updateAlbum: album
     })
   }
-  //this function take album id, updateTitle, updateUserid, oldAlbum and then update and set state 
+  // this function is used to update album in the list 
   updateAlbumInList = async (id, updateTitle, updateUserid, oldAlbum) => {
     const albums = this.state.albums;
     const index = albums.indexOf(oldAlbum);

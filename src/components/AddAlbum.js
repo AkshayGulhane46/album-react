@@ -18,14 +18,13 @@ const AddAlbum = (props) => {
 
       <div className='addalbum-container'>
         <div className='addalbum-form'>
-          <h4>Enter New Album Details</h4>
-          <div className='inp-container'>
-            Enter User Id :
-            <input id='aaform-userid-inp' type="number" />
+          <h1>Add Album!</h1>
+          <h3>Please Enter the Details for new Album</h3>
+          <div className='inp-container-add-album'>
+            <input id='aaform-userid-inp' type="number" placeholder='User ID'/>
           </div>
-          <div className='inp-container'>
-            Enter Album Title :
-            <input id='aaform-title-inp' type="text" />
+          <div className='inp-container-add-album'>
+            <input id='aaform-title-inp' type="text" placeholder='Album Name' />
           </div>
           <div>
             <Link to="/"><button onClick={getAlbumFormData}>Add To List</button></Link>
