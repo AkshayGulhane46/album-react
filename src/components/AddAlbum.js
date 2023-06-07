@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import Navbar from './Navbar';
 
+
 const AddAlbum = (props) => {
   // First get the album data 
   const getAlbumFormData = () => {
@@ -13,9 +14,7 @@ const AddAlbum = (props) => {
   return (
     <>
       {/* navber */}
-      <Navbar path="/" page="Home" />
-
-
+      <Navbar path="/" btnName="HomePage" />
       <div className='addalbum-container'>
         <div className='addalbum-form'>
           <h1>Add Album!</h1>

@@ -4,6 +4,12 @@ import AddAlbum from './AddAlbum';
 import AlbumsList from './albumLists';
 // import Navbar from './Navbar'
 import UpdateAlbum from './update';
+import { toast } from "react-toastify";
+
+ 
+// Import toastify css file
+import 'react-toastify/dist/ReactToastify.css';
+
 
 export default class App extends Component {
   constructor() {
@@ -27,7 +33,8 @@ export default class App extends Component {
   deleteAlbumFromList = (id) => {
     fetch(`https://jsonplaceholder.typicode.com/albums/${id}`, { method: 'DELETE', })
     const newAlbums = this.state.albums.filter((album) => album.id !== id);
-    alert("Your Album Deleted successfully");
+    toast('Album Deleted');
+
     this.setState({
       albums: newAlbums,
     })
@@ -66,7 +73,7 @@ export default class App extends Component {
     this.setState({
       albums: albums
     })
-    alert("Update Successfully done")
+    toast("Album is updated")
   }
   //--------------------------------------------------------------------------------------------------------
 
@@ -94,7 +101,7 @@ export default class App extends Component {
     this.setState({
       albums: [...this.state.albums, album]
     })
-    alert("New Album added successfully in the bottom");
+    toast("New Album added successfully in the bottom");
   }
   //--------------------------------------------------------------------------------------------------------
 
