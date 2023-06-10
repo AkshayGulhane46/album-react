@@ -14,4 +14,6 @@ const Navbar = (props) => {
   )
 }
 
+// Props.btnName will change the button text based on pages selected
+// path will make sure 
 export default Navbar

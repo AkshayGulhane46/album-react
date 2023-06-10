@@ -20,12 +20,11 @@ const UpdateAlbum = (props) => {
 
   return (
     <>
-      <Navbar path="/" page="Home" />
+      <Navbar path="/" page="Home" btnName='Home Page'/>
       <div className='update-album'>
         <div className='form-container'>
-          <h4 id='album-title'>Current Album title is : {props.album.title}</h4>
+          <h4 id='album-title'>Current Album title is :<h3 className='current_states'> {props.album.title}</h3></h4>
           <div className='inp-container'>
-          
             <input type="text" id='title-inp' placeholder='Enter New Title'></input>
           </div>
 
