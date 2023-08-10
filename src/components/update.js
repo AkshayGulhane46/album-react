@@ -28,7 +28,7 @@ const UpdateAlbum = (props) => {
             <input type="text" id='title-inp' placeholder='Enter New Title'></input>
           </div>
 
-          <h4 id='album-title'>Current User ID is: {props.album.userId}</h4>
+          <h4 id='album-title'>Current User ID is: <h3 className='current_states'>{props.album.userId}</h3></h4>
           <div className='inp-container'>
           
             <input type="number" id='userid-inp' placeholder='Enter updated user ID'></input>
