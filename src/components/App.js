@@ -21,6 +21,7 @@ export default class App extends Component {
   }
 
   // this function call first time when app render
+  // we are getting albums data from this line 
   componentDidMount = async () => {
     const albums = await fetch('https://jsonplaceholder.typicode.com/albums')
       .then((response) => response.json())
@@ -30,11 +31,11 @@ export default class App extends Component {
     })
   }
 
+  // Take ID as params 
   deleteAlbumFromList = (id) => {
     fetch(`https://jsonplaceholder.typicode.com/albums/${id}`, { method: 'DELETE', })
     const newAlbums = this.state.albums.filter((album) => album.id !== id);
     toast('Album Deleted');
-
     this.setState({
       albums: newAlbums,
     })
@@ -45,13 +46,15 @@ export default class App extends Component {
       updateAlbum: album
     })
   }
+
   // this function is used to update album in the list 
-  updateAlbumInList = async (id, updateTitle, updateUserid, oldAlbum) => {
+  updateAlbumInList = async (id, updateTitle, updateUserid, oldAlbumTitle) => {
     const albums = this.state.albums;
-    const index = albums.indexOf(oldAlbum);
+    const index = albums.indexOf(oldAlbumTitle);
     let updatedAlbum = [];
     if (id < 100) {
       updatedAlbum = await fetch(`https://jsonplaceholder.typicode.com/albums/${id}`, {
+        // put method is used for adding updated album in the list  
         method: 'PUT',
         body: JSON.stringify({
           userId: updateUserid,
@@ -81,6 +84,7 @@ export default class App extends Component {
   //this function take userid and title from input and then added to the bottom of the albums list
   addAlbumToList = (userId, title) => {
     fetch('https://jsonplaceholder.typicode.com/albums', {
+      // POST method to add album in the list 
       method: 'POST',
       body: JSON.stringify({
         userId: userId,

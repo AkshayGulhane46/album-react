@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import Navbar from './Navbar';
 
-
+// This file is used for showing add album component
 const AddAlbum = (props) => {
   // First get the album data 
   const getAlbumFormData = () => {
